@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- daisyUi cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend:{
+                    fontFamily:{
+                        'manrope':['Manrope','sans-serif']
+                    },
+                    fontSize:{
+                        '16':'16px'
+                    },
+                    colors:{
+                        'custom-green':'#ABEF5F'
+                    }
+                }
+            }
+        }
+    </script>
+    
+</head>
+<body class="font-manrope">
+   <header>
+    <!-- navbar start here -->
+        <section class="bg-[#f7f7f7] py-10">
+            <div class="container mx-auto">
+                <div class=" flex justify-between items-center">
+                   
+                      
+                      <div class="flex gap-x-2 items-center justify-center">
+                        <i class="fa-solid fa-arrow-up-long bg-custom-green rounded-full w-6 h-6 text-lg rotate-45 p-4 flex justify-center items-center"></i><a class=" text-[32px] font-[800]">Rinterio</a>
+                      </div>
+                      
+                 
+                    <div class="sm:hidden md:hidden lg:block">
+                      <ul class="flex gap-x-6 ">
+                        <li class="text-16 font-[800]"><a>Home</a></li>
+                        <li class="text-16 font-[400]"><a>Services</a></li>
+                        <li class="text-16 font-[400]"><a>Portfolio</a></li>
+                        <li class="text-16 font-[400]"><a>Blogs</a></li>
+                        <li class="text-16 font-[400]"><a>Contact Us</a></li>
+                      </ul>
+                    </div>
+                    <div class="sm:hidden md:block lg:block">
+                        <div class="flex items-center space-x-6 ">
+                            <i class="fa-solid fa-magnifying-glass w-[24px] h-[24px] rounded-full bg-white p-6 flex justify-center items-center text-gray-500 border text-[24px]"></i>
+                            <i class="fa-solid fa-cart-shopping w-[24px] h-[24px] rounded-full bg-white p-6 flex justify-center items-center text-gray-500 border text-[24px]"></i>
+                             <div class="bg-custom-green rounded-[32px] px-[18px] py-[16px] flex space-x-3 ">
+                                <a class="text-[rgb(28,28,28)] text-[20px] font-[800] ">Book Consult</a>
+                                <i class="fa-solid fa-arrow-up-long  w-[12px] h-[12px] text-center rounded-full text-white bg-black p-4 flex items-center justify-center rotate-45"></i>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="lg:hidden md:block sm:block">
+                        <i class="fa-solid fa-bars w-[24px] h-[24px] rounded-full bg-white p-6 flex justify-center items-center text-gray-500 border text-[24px]"></i>
+                    </div>
+                  </div>
+            </div>
+        </section>
+   </header>
+</body>
+</html>
